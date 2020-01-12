@@ -53,15 +53,9 @@ module.exports = {
             ]
         }
     ]},
-    // bield
     plugins: [
         new MiniCssExtranctPlagin({
             filename: '[name].css',
         }),
-    ],
-    //dev
-    devServer: {
-        port: 9001,
-        overlay: true,
-    },
+    ]
 }
