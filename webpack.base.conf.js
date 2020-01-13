@@ -1,19 +1,25 @@
 const path = require('path');
 const MiniCssExtranctPlagin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const PATH = {
     src: path.join(__dirname,'./src'),
     dist: path.join(__dirname,'./dist'),
+    public: 'public/',
 }
 
 module.exports = {
+    externals: {
+        paths: PATH
+    },
     entry: {
         app: `${PATH.src}/index.js`
     },
     output: {
-        filename: '[name].js',
+        filename: `${PATH.public}js/[name].js`,
         path: `${PATH.dist}`,
-        publicPath: '/dist',
+        publicPath: './',
     },
     module: {
         rules: [{
@@ -51,11 +57,28 @@ module.exports = {
                 },
                 'sass-loader'
             ]
+        },{
+            test: /\.(img|jpg|gif|svg)$/,
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]',
+            }
         }
     ]},
     plugins: [
         new MiniCssExtranctPlagin({
-            filename: '[name].css',
+            filename: `${PATH.public}css/[name].css`,
         }),
+        new HtmlWebpackPlugin({
+            hash: false,
+            template: `${PATH.src}/index.html`,
+            filename: `./index.html`
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: `${PATH.src}/public/img`,
+                to: `${PATH.public}img`
+            },
+        ])
     ]
 }

@@ -5,8 +5,10 @@ const base = require('./webpack.base.conf');
 
 const devWebpackConfig = merge(base,{
     mode: 'development',
+    
     devtool: 'cheap-module-eval-source-map',
     devServer: {
+        contentBase: base.externals.paths.src,
         port: 9008,
         overlay: {
             warnings: true,
