@@ -4,8 +4,10 @@ const merge = require('webpack-merge');
 const base = require('./webpack.base.conf');
 
 const devWebpackConfig = merge(base,{
+    output: {
+        publicPath: '/'
+    },
     mode: 'development',
-    
     devtool: 'cheap-module-eval-source-map',
     devServer: {
         contentBase: base.externals.paths.src,

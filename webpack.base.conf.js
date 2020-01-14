@@ -78,7 +78,10 @@ module.exports = {
             {
                 from: `${PATH.src}/public/img`,
                 to: `${PATH.public}img`
-            },
+            }, {
+                from: `${PATH.src}/public/fav`,
+                to: `./`,
+            }
         ])
     ]
 }
