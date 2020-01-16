@@ -76,8 +76,8 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {
-                from: `${PATH.src}/public/img`,
-                to: `${PATH.public}img`
+                from: `${PATH.src}/img`,
+                to: `./img`
             }, {
                 from: `${PATH.src}/public/fav`,
                 to: `./`,
