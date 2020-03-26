@@ -11,6 +11,19 @@
     justify-content: space-between
     box-shadow: 2px 2px 20px rgba(9, 9, 11, 0.09)
     margin-bottom: 43px
+  &__content
+    min-height: auto
+    padding-left: 41px
+    padding-right: 61px
+    &-title
+      padding-top: 6px
+      width: 407px
+      height: 44px
+      color: #173343
+      font-family: Montserrat
+      font-size: 34px
+      font-weight: 700
+      line-height: 44.2px
   &__footer
     width: 100%
     height: 100%
@@ -146,3 +159,320 @@
       line-height: 22.4px
       text-decoration: underline
       text-transform: uppercase
+.pathSite
+    span
+      margin-right: 25px
+      position: relative
+      color: #93a0b9
+      font-family: "Noto Sans"
+      font-size: 10px
+      font-weight: 700
+      letter-spacing: 0.4px
+      line-height: 17px
+      text-transform: uppercase
+    &+span::before
+      content: '/'
+      position: absolute
+      color: red
+      left: -12px
+.board
+  width: 100%
+  padding-top: 41px
+  display: flex
+  flex-wrap: wrap
+  &_table-color
+    box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.05)
+    border-radius: 5px
+    background-color: #ffffff
+  &__cell-header
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-textBlock
+      display: flex
+      flex-direction: column
+      &-general-info
+        color: #173343
+        font-family: Montserrat
+        font-size: 22px
+        font-weight: 700
+        line-height: 28.6px
+      &-add-info
+        color: #93a0b9
+        font-family: "Noto Sans"
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 0.72px
+        line-height: 20.4px
+        text-transform: uppercase
+    &-link
+      position: relative
+      color: #ed6b6a
+      font-family: "Noto Sans"
+      font-size: 12px
+      font-weight: 600
+      letter-spacing: 0.72px
+      line-height: 20.4px
+      text-transform: uppercase
+      padding-right: 29px 
+      &::before
+        position: absolute
+        content: '\f054'
+        right: 0
+        font-family: FontAwesome
+  &__column
+    width: 50%
+    min-width: 726px
+    &_magin-bottom
+      margin-bottom: 20px
+
+.services
+  width: 100%
+  padding: 25px 39px
+  padding-bottom: 0px
+  max-width: 726px
+  box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.05)
+  border-radius: 5px
+  background-color: #ffffff
+  &__header
+    padding-bottom: 15px
+  &__item
+    display: flex
+    position: relative
+    align-items: center
+    justify-content: space-between
+    height: 90px
+    &::before
+      position: absolute
+      content: ''
+      width: 100%
+      height: 1px
+      top: 0
+      background-color: #dbe7ff
+    &-time
+      color: #93a0b9
+      font-family: Montserrat
+      font-size: 22px
+      font-weight: 700
+      line-height: 28.6px
+      margin-right: 33px
+    &-info
+      display: flex
+      flex-direction: column
+      justify-content: center
+      margin-right: auto
+      &-title
+        color: #173343
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 700
+        letter-spacing: 0.16px
+        line-height: 20.8px
+      &-addInfo
+        position: relative
+        display: flex
+        margin-top: 11px
+        width: 272px
+        height: 18px
+        color: #93a0b9
+        font-family: "Noto Sans"
+        font-size: 10px
+        font-weight: 700
+        letter-spacing: 0.4px
+        line-height: 17px
+        text-transform: uppercase
+        span
+          display: block
+          position: relative
+          margin-left: 5px
+          &::before
+            content: '/'
+            color: #dbe7ff
+            position: block
+            padding-right: 5px
+        &-icon
+          margin-right: 9px 
+    &-edit
+      display: flex
+      &-icon
+        margin-right: 14px
+      &-link a
+        display: block
+        position: relative
+        text-decoration: none
+        color: #173343
+        font-family: "Noto Sans"
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 0.72px
+        line-height: 20.4px
+        text-transform: uppercase
+        &::before
+          position: absolute
+          content: ''
+          bottom: 0
+          width: 100%
+          height: 1px
+          background-color: #dbe7ff
+.debt-list
+  padding: 41px
+  &__header
+    margin-bottom: 5px
+  &__item
+    display: flex
+    min-height: 65px 
+    justify-content: space-between
+    align-items: center
+    position:  
+    &-date
+      width: 122px
+      height: 21px
+      color: #93a0b9
+      font-family: Montserrat
+      font-size: 14px
+      font-weight: 600
+      line-height: 21px
+      position: 
+      &::after
+        margin-left: 3px
+        content: '/'
+        color: #93a0b9
+    &-text
+      margin-left: 3px
+      margin-right: auto
+      color: #173343
+      font-family: Montserrat
+      font-size: 18px
+      font-weight: 600
+      letter-spacing: 0.36px
+      line-height: 27px
+    &-price
+      // Style for "- 12 000,"
+      width: 128px
+      height: 27px
+      color: #232735
+      font-family: Montserrat
+      font-size: 18px
+      font-weight: 600
+      letter-spacing: 0.36px
+      line-height: 27px
+      span
+        color: #93a0b9
+        font-size: 18px
+        font-weight: 600
+        letter-spacing: 0.36px
+        line-height: 27px
+    & + .debt-list__item::after
+      content: ''
+      position: absolute
+      top: 0
+      width: 100%
+      height: 1px
+      background: #dbe7ff
+.treatment
+  padding: 20px
+  padding-top: 38px
+  margin-top: 30px
+  margin-bottom: 15px
+  &__header
+    padding: 0px 19px
+    padding-bottom: 20px
+  &__item
+    &+.treatment__item
+      margin-top: 20px
+.request
+  border-radius: 3px
+  border: 1px solid #dbe7ff
+  &__header
+    padding-top: 30px
+    padding-left: 40px
+    padding-right: 40px
+    padding-bottom: 36px
+    &-title
+      color: #173343
+      font-family: Montserrat
+      font-size: 16px
+      font-weight: 700
+      letter-spacing: 0.16px
+      line-height: 20.8px
+      margin-bottom: 7px
+    &-title-additional-information
+      color: #93a0b9
+      font-family: "Noto Sans"
+      font-size: 12px
+      font-weight: 600
+      letter-spacing: 0.72px
+      line-height: 20.4px
+      text-transform: uppercase
+    &-status
+      padding: 12px 13px
+      height: 21px
+      border-radius: 3px
+      border: 1px solid #90cb6b
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      margin-top: 13px
+      color: #66ae60
+      font-family: "Noto Sans"
+      font-size: 10px
+      font-weight: 700
+      letter-spacing: 0.4px
+      line-height: 17px
+      text-transform: uppercase
+      &::hover
+        cursor: pointer
+  &__messag
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 108px
+    position: relative
+    padding: 0 40px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #dbe7ff
+    &-userInfo
+      display: flex
+      align-items: center
+      &-img
+        margin-right: 18px
+      &-data
+        display: flex
+        flex-direction: column
+        &-name
+          color: #173343
+          font-family: "Noto Sans"
+          font-size: 12px
+          font-weight: 600
+          letter-spacing: 0.72px
+          line-height: 20.4px
+          text-transform: uppercase
+        &-date
+          color: #93a0b9
+          font-family: "Noto Sans"
+          font-size: 10px
+          font-weight: 700
+          letter-spacing: 0.4px
+          line-height: 17px
+          text-transform: uppercase
+    &-messagInfo
+      display: flex
+      align-items: center
+      &-icon
+        margin-right: 15px
+      &-text
+        color: #173343
+        font-family: "Noto Sans"
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 0.72px
+        line-height: 20.4px
+        text-transform: uppercase
+  
