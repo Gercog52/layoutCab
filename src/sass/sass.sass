@@ -475,4 +475,133 @@
         letter-spacing: 0.72px
         line-height: 20.4px
         text-transform: uppercase
-  
+.requisition
+  padding: 20px
+  padding-top: 38px
+  &__header
+    padding: 0px 20px
+    padding-bottom: 30px
+  &__item
+.requisition-card
+  border-radius: 3px
+  border: 1px solid #dbe7ff
+  padding-top: 26px
+  &__btns
+    display: flex
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      height: 1px
+      width: 100%
+      background-color: #dbe7ff
+    &-btn
+      width: 50%
+      height: 60px
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #173343
+      font-family: "Noto Sans"
+      font-size: 14px
+      font-weight: 600
+      letter-spacing: 0.56px
+      line-height: 23.8px
+      text-transform: uppercase
+      position: relative
+      &-icon
+        margin-right: 10px
+        font-size: 15px
+      &+.requisition-card__btns-btn::before
+        position: absolute
+        content: ''
+        left: 0
+        height: 100%
+        width: 1px
+        background-color: #dbe7ff
+  &__user-info
+    padding: 0 30px
+    &-date
+      display: flex
+      align-items: center
+      padding: 25px 0px
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        top: 10
+        left: 0
+        height: 1px
+        width: 100%
+        background-color: #dbe7ff
+      &-infoBlock
+        width: 50%
+        display: flex
+        align-items: center
+        &-icon
+          margin-right: 11px
+        span
+          display: flex
+          color: #93a0b9
+          font-family: "Noto Sans"
+          font-size: 10px
+          font-weight: 700
+          letter-spacing: 0.4px
+          line-height: 17px
+          text-transform: uppercase
+          margin-right: 20px
+          display: flex
+          align-items: center
+          
+        color: #173343
+        font-family: "Noto Sans"
+        font-size: 14px
+        font-weight: 600
+        letter-spacing: 0.56px
+        line-height: 21px
+    &-contacts
+      display: flex
+      justify-content: space-between
+      color: #93a0b9
+      font-family: "Noto Sans"
+      font-size: 12px
+      font-weight: 600
+      letter-spacing: 0.48px
+      line-height: 20.4px
+      &-icon
+        margin-right: 9px
+      &-phone
+        display: flex
+        align-items: center
+      &-email
+        display: flex
+        align-items: center
+      &-still
+        display: flex
+        align-items: center
+        &-icon
+          margin-left: 9px
+    &-name-info
+      display: flex
+      justify-content: center
+      margin-bottom: 20px
+      position: relative
+      &-name
+        left: 0
+        color: #173343
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 700
+        letter-spacing: 0.16px
+        line-height: 20.8px
+        position: absolute
+      &-cardHeader
+        color: #173343
+        font-family: "Noto Sans"
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 0.48px
+        line-height: 20.4px
+
