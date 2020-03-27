@@ -68,6 +68,14 @@
 @media all and ( max-width: 552px )
   .services
     padding: 22px
+  .debt-list
+    padding: 22px
+  .debt-list__item-price
+    flex-shrink: 0
+  .debt-list__item-date
+    flex-shrink: 0
+    &::after
+      display: none
 @media all and ( max-width: 531px )
   .board__column
     min-width: 0px
@@ -76,6 +84,16 @@
     display: flex
     flex-wrap: wrap
     min-width: 135px
+@media all and ( max-width: 504px )
+  .debt-list__item
+    padding-top: 5px
+    padding-bottom: 5px
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+  .debt-list__item-text
+    margin-right: 0px
 @media all and ( max-width: 498px )
   .contacts__phoneAndEmail
     flex-direction: column
@@ -90,6 +108,16 @@
 @media all and ( max-width: 422px )
   .services__item-edit-icon
     display: none
+  .debt-list__item-date
+    width: auto
+    padding-right: 5px
+    font-size: 13px
+  .debt-list__item-text
+    font-size: 15px
+  .debt-list__item-price
+    font-size: 15px
+    span
+      font-size: 15px
 @media all and ( max-width: 473px )
   .user-info_text
     padding-left: 10px
@@ -103,6 +131,11 @@
     margin-right: 0
   .services__item-edit-link
     display: none
+@media all and ( max-width: 370px )
+  .debt-list__header
+    text-align: center
+    display: flex
+    flex-direction: column
 @media all and ( max-width: 364px )
   .user-logOut
     display: flex
