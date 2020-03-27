@@ -1,3 +1,104 @@
+html 
+  height: 100%
+
+body 
+  padding: 0
+  margin: 0
+  height: 100%
+  background-color: #f8fbff
+* 
+  box-sizing: border-box
+.app 
+  margin: 0 auto
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+.menu 
+  width: 100%
+  max-width: 320px
+  background-color: #173343
+  &__header
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #132b38
+    height: 80px
+  &__item 
+    width: 100%
+    min-height: 70px
+    display: flex
+    align-items: center
+    background: #173343
+    padding: 15px 20px
+    color: #ffffff
+    font-family: "Noto Sans"
+    font-size: 12px
+    font-weight: 600
+    letter-spacing: 0.72px
+    line-height: 20.4px
+    text-transform: uppercase
+    .notice
+      display: block
+      position: relative
+      .notice__len
+        position: absolute
+        right: -30
+        top: -10
+        width: 16px
+        height: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #173343
+        background-color: #ffffff
+        border-radius: 20px
+    &__main
+      background-color: #ed6b6a
+      color: #ffffff
+    .menu__itemImg 
+      flex-shrink: 0 
+      width: max-content
+      margin-right: 30px
+      display: flex
+      align-items: center
+    .menu__itemText
+      display: flex
+      flex-direction: column
+      & span+span
+        color: #9acce8
+        font-family: "Noto Sans"
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 0.48px
+        line-height: 20.4px
+  &__messag
+    display: none
+    height: 100%
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #93a0b9
+    font-family: "Noto Sans"
+    font-size: 12px
+    font-weight: 600
+    letter-spacing: 0.72px
+    line-height: 20.4px
+    text-transform: uppercase
+    background-color: #173343
+  &__messagText 
+    position: relative
+    &::after
+      position: absolute
+      top: -21px
+      left: 50%
+      transform: translateX(-50%)
+      font-family: FontAwesome
+      font-weight: 400
+      content: "\f077"
+.menu__item__main .menu__itemText span+span
+  color: #fff
 .content
   width: 100%
   display: flex
