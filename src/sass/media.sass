@@ -84,6 +84,10 @@
     display: flex
     flex-wrap: wrap
     min-width: 135px
+  .request__header
+    padding: 20px
+  .request__messag
+    padding: 20px
 @media all and ( max-width: 504px )
   .debt-list__item
     padding-top: 5px
@@ -125,6 +129,15 @@
     padding-right: 10px
   .user-logOut__icon
     display: none
+@media all and ( max-width: 468px )
+  .request__messag
+    flex-direction: column
+  .request__messag-messagInfo
+    margin-top: 10px
+@media all and ( max-width: 415px )
+  .treatment__header
+    flex-direction: column
+    text-align: center
 @media all and ( max-width: 392px )
   .services__item-edit-icon
     display: block
