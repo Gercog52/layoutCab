@@ -17,9 +17,8 @@ body {
   overflow: hidden;
 }
 .menu {
-  display: none;
   width: 100%;
-  max-width: 327px;
+  max-width: 320px;
   background-color: #173343;
 }
 .menu__messag {
