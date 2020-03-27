@@ -10,6 +10,10 @@
 @media all and ( max-width: 927px )
   .contacts__phoneAndEmail
     flex-shrink: 0
+  .requisition-card__user-info-name-info
+    flex-direction: column
+  .requisition-card__user-info-name-info-name
+    position: static
 @media all and ( max-width: 884px )
   .user-logOut::before
     display: none
@@ -25,6 +29,10 @@
   .user-info__profile
     flex-shrink: 0
     max-width: 230px
+  .requisition-card__user-info-contacts
+    flex-wrap: wrap
+  .requisition-card__user-info-contacts-still
+    flex-basis: 100%
 @media all and ( max-width: 727px )
   .user-logOut__icon
     margin-left: 10px
@@ -38,11 +46,13 @@
     max-width: 230px
   .services__item-time
     margin-right: 10px
+@media all and ( max-width: 670px )
+  .user-info__settingsIcon
+    display: none
 @media all and ( max-width: 653px )
   .user-info__profilePhoto
     margin: 5px
-  .user-info__profile
-    max-width: 150px
+
 @media all and ( max-width: 629px )
   .contacts
     flex-direction: column
@@ -51,10 +61,19 @@
   .contacts__phoneAndEmail
     padding-top: 20px
     padding-bottom: 20px
+@media all and ( max-width: 623px )
+  .user-info_text
+    text-align: center
 @media all and ( max-width: 600px )
   .services__header
     display: flex
     flex-direction: column
+  .requisition-card__user-info-date
+    flex-direction: column
+  .requisition-card__user-info-date-infoBlock
+    text-align: center
+    width: 100%
+    justify-content: center
 @media all and ( max-width: 586px )
   .board__cell-header-link
     padding-right: 15px
@@ -70,12 +89,18 @@
     padding: 22px
   .debt-list
     padding: 22px
+  .requisition-card__user-info
+    padding: 22px
   .debt-list__item-price
     flex-shrink: 0
   .debt-list__item-date
     flex-shrink: 0
     &::after
       display: none
+  .user-logOut__icon
+    display: none
+  .user-logOut
+    max-width: 100px
 @media all and ( max-width: 531px )
   .board__column
     min-width: 0px
@@ -88,6 +113,10 @@
     padding: 20px
   .request__messag
     padding: 20px
+  
+@media all and ( max-width: 520px )
+  .requisition-card__user-info-contacts-email
+    order: -1
 @media all and ( max-width: 504px )
   .debt-list__item
     padding-top: 5px
@@ -98,6 +127,9 @@
     text-align: center
   .debt-list__item-text
     margin-right: 0px
+  .requisition__header
+    flex-direction: column
+    text-align: center
 @media all and ( max-width: 498px )
   .contacts__phoneAndEmail
     flex-direction: column
@@ -109,6 +141,18 @@
     &:last-child
       margin-top: 10px
       flex-basis: 100%
+  .requisition-card__user-info-contacts
+    flex-direction: column
+    align-items: center
+  .requisition-card__user-info-name-info
+    text-align: center
+@media all and ( max-width: 462px )
+  .user-logOut
+    max-width: 50px
+    .user-info_text
+      display: none
+    .user-logOut__icon
+      display: block
 @media all and ( max-width: 422px )
   .services__item-edit-icon
     display: none
@@ -138,6 +182,13 @@
   .treatment__header
     flex-direction: column
     text-align: center
+  .user-info__settings
+    width: 100%
+    .user-info_text
+      display: none
+  .user-info__settingsIcon
+    display: block
+    margin: 0  
 @media all and ( max-width: 392px )
   .services__item-edit-icon
     display: block
@@ -145,13 +196,21 @@
     margin-right: 0
   .services__item-edit-link
     display: none
+@media all and ( max-width: 380px )
+  .requisition-card__btns-btn
+    font-size: 13px
+  .requisition-card__btns-btn-icon
+    margin-right: 5px
 @media all and ( max-width: 370px )
   .debt-list__header
     text-align: center
     display: flex
     flex-direction: column
+  .requisition-card__user-info
+    padding: 5px
 @media all and ( max-width: 364px )
   .user-logOut
+    width: 50px
     display: flex
     justify-content: center
     align-items: center
@@ -160,6 +219,9 @@
   .user-logOut__icon
     display: block
     margin: 0
+@media all and ( max-width: 340px )
+  .user-info__profile
+    max-width: 210px
 @media all and ( max-width: 400px )
   .content__footer
     padding-left: 15px
